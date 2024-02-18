@@ -26,22 +26,25 @@ h4{
     font-size:1.7rem;
     line-height: 1.3;
 }
+
 p{
-    font-size:2rem;
+    font-size:1.5rem;
     line-height: 1.5;
 }
+
 /* Header styling */
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width:100%;
     padding:1.5rem;
     background-color: rgb(117, 35, 5);
+    background-color: rgb(212,202,189);
 }
  header a{
     color:rgba(249,214,176,255);
+    color:rgb(117, 35, 5);
     font-size:1.5rem;
     line-height: 1;
     font-weight: bold;
@@ -55,7 +58,6 @@ header {
 
 /* Motto styling */
 .motto{
-    width:100%;
     height:40rem;
     background-image: url(../images/nitish-meena-RbbdzZBKRDY-unsplash.jpg);
     background-position: center;
@@ -80,4 +82,142 @@ header {
 }
 
 /* inspiration styling */
+.inspiration{
+    padding:2rem;
+    background-color: rgb(212,202,189) ;
+}
+.inspiration p{
+    padding:1rem;
+    margin:0rem auto;
+    color:rgb(117, 35, 5);
+}
+.inspiration .image-container {
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
+.inspiration img{
+    width:auto;
+    height:30rem;
+    overflow: hidden;
+    padding:1rem;
+}
+
+/* Destinations styling */
+.destination{
+    width:100%;
+    height:45rem;
+    background-image: url(../images/holly-mandarich-UVyOfX3v0Ls-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.destination .content{
+    position: relative;
+    top:30rem;
+    margin: 0 auto;
+    width:80%;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding:1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.destination h2{
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color:rgb(38,58,38);
+    opacity:1;
+}
+
+/* articles styling */
+.articles{
+    padding:2rem;
+    background-color: rgb(212,202,189) ;
+}
+.articles p{
+    padding:1rem;
+    margin:0rem auto;
+    color:rgb(117, 35, 5);
+}
+.articles.image-container {
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.articles img{
+    width:auto;
+    height:27rem;
+    overflow: hidden;
+    padding:1rem;
+}
+
+/* tips styling */
+.tips{
+    border-top: 5px solid rgb(117, 35, 5);
+    padding:2rem;
+    background-color: rgb(117, 35, 5) ;
+}
+.tips h3{
+    padding:1rem;
+    font-weight: bold;
+    margin:0rem auto;
+    color:rgb(212,202,189);
+}
+.tips.image-container {
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tips img{
+    width:auto;
+    height:30rem;
+    overflow: hidden;
+    padding:1rem;
+}
+
+/* invitation styling */
+.invitation{
+    height:25rem;
+    background-image: url(../images/samuele-errico-piccarini-MCroQe9ykmM-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.invitation{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.invitation .content{
+    background-color: rgba(255, 255, 255, 0.4);
+    padding:1rem;
+    border-radius: 1rem;
+}
+.invitation h2{
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color:rgb(14,39,48);
+    opacity:1;
+}
+
+/* footer styling */
+footer {
+    background-color:rgb(14,39,48);
+    color:rgb(200,196,199);
+    font-family: 'Courier New', Courier, monospace;
+}
+footer h5{
+margin-top:1rem;
+}
+footer .content{
+    padding:1rem;
+}
