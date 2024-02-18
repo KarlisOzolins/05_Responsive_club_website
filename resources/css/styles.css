@@ -39,14 +39,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding:1.5rem;
-    background-color: rgb(117, 35, 5);
     background-color: rgb(212,202,189);
 }
  header a{
-    color:rgba(249,214,176,255);
     color:rgb(117, 35, 5);
     font-size:1.5rem;
-    line-height: 1;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
  }
@@ -55,10 +52,26 @@ header {
     padding:0.5rem  1rem;
     margin:0 1rem;
 }
+@media only screen and (max-width:1090px) {
+    header a{
+        font-size:1.3rem;
+     }
+     header li {
+        padding:.3rem  .3rem;
+    }
+}
+@media only screen and (max-width:840px) {
+    header {
 
+        justify-content: space-evenly;
+    }
+    header a{
+        font-size:1.3rem;
+     }
+}
 /* Motto styling */
 .motto{
-    height:40rem;
+    height: 50rem;
     background-image: url(../images/nitish-meena-RbbdzZBKRDY-unsplash.jpg);
     background-position: center;
     background-size: cover;
@@ -80,6 +93,11 @@ header {
     color:rgba(99,41,20,255);
     opacity:1;
 }
+@media only screen and (max-width:1550px) {
+    .motto .content{
+        width:80%;
+    }
+}
 
 /* inspiration styling */
 .inspiration{
@@ -94,7 +112,7 @@ header {
 .inspiration .image-container {
     width:100%;
     display:flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -105,10 +123,48 @@ header {
     padding:1rem;
 }
 
+@media only screen and (max-width:1260px){
+    .inspiration{
+        padding:.5rem 0;
+
+    }
+    .inspiration p{
+        padding:0.5rem;
+
+    }
+    .inspiration .image-container {
+        justify-content:center;
+    }
+    .inspiration img{
+        width:45%;
+        height:auto;
+        overflow: hidden;
+        padding:1rem;
+    }  
+}
+@media only screen and (max-width:750px){
+    .inspiration{
+        padding:.5rem 0;
+
+    }
+    .inspiration p{
+        font-size: 1.3rem;
+
+    }
+    .inspiration .image-container {
+        justify-content:center;
+    }
+    .inspiration img{
+        width:100%;
+        height:auto;
+        overflow: hidden;
+        padding:0rem;
+        padding-bottom:3rem;
+    }  
+}
 /* Destinations styling */
 .destination{
-    width:100%;
-    height:45rem;
+    height:50rem;
     background-image: url(../images/holly-mandarich-UVyOfX3v0Ls-unsplash.jpg);
     background-position: center;
     background-size: cover;
@@ -118,9 +174,9 @@ header {
 
 .destination .content{
     position: relative;
-    top:30rem;
+    top:35rem;
     margin: 0 auto;
-    width:80%;
+    max-width:85%;
     background-color: rgba(255, 255, 255, 0.6);
     padding:1rem;
     border-radius: 1rem;
@@ -132,7 +188,31 @@ header {
     color:rgb(38,58,38);
     opacity:1;
 }
-
+@media only screen and (max-width:1260px){
+    .destination{
+        height:35rem;
+    }
+    
+    .destination .content{
+        top:20rem;
+        max-width:80%;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+}
+@media only screen and (max-width:750px){
+    .destination{
+        height:25rem;
+    }
+    
+    .destination .content{
+        top:15rem;
+        max-width:100%;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    .destination h2{
+        font-size: 2rem;
+    }
+}
 /* articles styling */
 .articles{
     padding:2rem;
@@ -152,16 +232,50 @@ header {
 
 .articles img{
     width:auto;
-    height:27rem;
+    height: 22rem;
     overflow: hidden;
     padding:1rem;
 }
-
+@media only screen and (max-width:1260px){
+    .articles{
+        padding:1rem;
+        background-color: rgb(212,202,189) ;
+    }
+    .articles p{
+        padding:1rem;
+        margin:0rem auto;
+        color:rgb(117, 35, 5);
+    }
+    .articles.image-container {
+        width:100%;
+        flex-direction: column;
+    }
+    
+    .articles img{
+        width:90%;
+        height:auto;
+    }
+}
+@media only screen and (max-width:750px){
+    .articles{
+        padding:0;
+    }
+    .articles p{
+        padding:1rem;
+    }
+    .articles.image-container {
+        padding:0;
+    }
+    .articles img{
+        width:100%;
+        height:auto;
+        padding:0;
+    }
+}
 /* tips styling */
 .tips{
-    border-top: 5px solid rgb(117, 35, 5);
     padding:2rem;
-    background-color: rgb(117, 35, 5) ;
+    background-color: rgba(117, 35, 5, 0.7) ;
 }
 .tips h3{
     padding:1rem;
@@ -182,7 +296,36 @@ header {
     overflow: hidden;
     padding:1rem;
 }
-
+@media only screen and (max-width:1260px){
+    .tips{
+        padding:2rem;
+    }
+    .tips h3{
+        padding:.5rem;
+        font-weight: normal;
+    } 
+    .tips img{
+        width:45%;
+        height:auto;
+        overflow: hidden;
+        padding:1rem;
+    }
+}
+@media only screen and (max-width:780px){
+    .tips{
+        padding:2rem 0;
+    }
+    .tips h3{
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    } 
+    .tips img{
+        width:100%;
+        height:auto;
+        overflow: hidden;
+        padding:0.5rem 0;
+    }
+}
 /* invitation styling */
 .invitation{
     height:25rem;
@@ -198,7 +341,7 @@ header {
 }
 
 .invitation .content{
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.6);
     padding:1rem;
     border-radius: 1rem;
 }
@@ -207,6 +350,30 @@ header {
     font-family: 'Courier New', Courier, monospace;
     color:rgb(14,39,48);
     opacity:1;
+}
+@media only screen and (max-width:1260px){
+    .invitation{
+        height:20rem;
+    }
+    .invitation .content{
+        width:80%;
+        padding:0.75rem;
+    }
+    .invitation h2{
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width:780px){
+    .invitation{
+        height:15rem;
+    }
+    .invitation .content{
+        width:80%;
+        padding:0.5rem;
+    }
+    .invitation h2{
+        font-size: 1.5rem;
+    }
 }
 
 /* footer styling */
