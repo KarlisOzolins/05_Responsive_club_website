@@ -1,0 +1,83 @@
+/* Universal Styles */
+
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+h1{
+    font-size:3rem;
+    letter-spacing:0.3rem;
+    line-height: 1.5;
+}
+
+h2{
+    font-size:2.5rem;
+    line-height: 1.5;
+}
+
+h3{
+    font-size:2rem;
+    line-height: 1.5;
+}
+
+h4{
+    font-size:1.7rem;
+    line-height: 1.3;
+}
+p{
+    font-size:2rem;
+    line-height: 1.5;
+}
+/* Header styling */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    padding:1.5rem;
+    background-color: rgb(117, 35, 5);
+}
+ header a{
+    color:rgba(249,214,176,255);
+    font-size:1.5rem;
+    line-height: 1;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+ }
+ header li {
+    display: inline-block;
+    padding:0.5rem  1rem;
+    margin:0 1rem;
+}
+
+/* Motto styling */
+.motto{
+    width:100%;
+    height:40rem;
+    background-image: url(../images/nitish-meena-RbbdzZBKRDY-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.motto{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.motto .content{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding:1rem;
+    border-radius: 1rem;
+}
+.motto h1{
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color:rgba(99,41,20,255);
+    opacity:1;
+}
+
+/* inspiration styling */
+
